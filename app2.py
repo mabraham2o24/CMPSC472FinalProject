@@ -175,7 +175,14 @@ def survey():
     return render_template('survey.html')
 
 
-
+# Function to get past journal entries for a user
+=def get_past_entries(username):
+    conn = sqlite3.connect('users.db')
+    c = conn.cursor()
+    c.execute('SELECT content, timestamp FROM journal_entries WHERE username=? ORDER BY timestamp DESC', (username,))
+    entries = c.fetchall()
+    conn.close()
+    return entries
 @app.route('/journaling', methods=['GET', 'POST'])
 def journaling():
     if request.method == 'POST':
