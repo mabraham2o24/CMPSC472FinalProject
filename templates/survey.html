@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Survey</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #bbd6ee;
+            color: #495057;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+
+        h1 {
+            color: #100046;
+            margin-bottom: 20px;
+            font-size: 36px; /* Adjust the font size as needed */
+        }
+
+        form {
+            background-color: #cce3f7;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 80%; /* Adjust the max-width */
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            cursor: pointer;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Survey</h1>
+    <form action="/survey" method="post">
+        <label for="q1">1. How often do you consume alcohol or drugs? (1 = extremely rare, 5 = extremely often)</label>
+        <select id="q1" name="q1" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+        <label for="q2">2.Have you experienced any negative consequences due to alcohol or drug use? (1 = little to no negative experience, 5 = have experience serious issue)</label>
+        <select id="q2" name="q2" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+        <label for="q3">3. How likely are you to seek help if you or a loved one struggles with addiction? (1 = not that likely, 5 = extremely likely)</label>
+        <select id="q3" name="q3" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+        <label for="q4">4. How concerned are you about the impact of drug abuse on your community? (1 = Not concerned at all, 5 = Very concerned)</label>
+        <select id="q4" name="q4" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+        
+        <label for="q5">5. How knowledgeable do you feel about the signs and symptoms of addiction? (1 = Not knowledgeable, 5 = Very knowledgeable)</label>
+        <select id="q5" name="q5" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+        <label for="q6">6.  How confident are you in accessing and utilizing addiction treatment resources if needed? (1 = Not confident, 5 = Very confident)</label>
+        <select id="q6" name="q6" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+        <label for="q7">7.  How likely are you to participate in community initiatives aimed at reducing drug abuse? (1 = Not likely, 5 = Very likely)</label>
+        <select id="q7" name="q7" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+        <label for="q8">8. How often do you engage in activities or hobbies as a healthy alternative to coping with stress or negative emotions? (1 = Rarely or never, 5 = Very often)</label>
+        <select id="q8" name="q8" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+        <label for="q9">9. How confident are you in setting boundaries and saying no to peer pressure related to substance use? (1 = Not confident at all, 5 = Very confident)</label>
+        <select id="q9" name="q9" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Result</title>
+    <style>
+        body {
+            background-color: #a9deeb;
+            color: #100046;
+            font-size: larger;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #100046;
+            font-size: 36px; /* Adjust the font size as needed */
+            margin-bottom: 20px; /* Added margin to separate from the image */
+        }
+
+        p {
+            margin-top: 20px;
+        }
+
+        #image-container {
+            margin-top: 20px; /* Added margin for spacing */
+            max-width: 80%; /* Limit the width of the image container */
+        }
+
+        #image-container img {
+            width: 100%; /* Ensure the image doesn't exceed the container width */
+            height: auto; /* Maintain aspect ratio */
+            max-height: 300px; /* Limit the maximum height of the image */
+            object-fit: cover; /* Scale the image while maintaining aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <h1>Your Survey Results</h1>
+    <p><em>Your overall survey results: {{ survey_category }}</p></em>
+    <p>Advice: {{ advice }}</p>
+
+    <!-- Image container at the bottom -->
+    <div id="image-container">
+        <img src="https://cdn.shopify.com/s/files/1/0070/7032/files/churchhill-quote.png?v=1706739710" alt="Quote image">
+    </div>
+</body>
+</html>
