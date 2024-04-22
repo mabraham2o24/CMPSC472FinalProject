@@ -76,7 +76,7 @@ Discussion and Conclusions: Address project issues, limitations, and how your co
   + Option 1: Survey
     + Click the first option called 'Survey'. Once you open up this option, you will be prompted to fill out a questionaire.
     + There are 9 questions and you rate your answer from a scale 1 to 5. For instance, the first question asks about how often do you consume alcohol or drugs. Your answer will be somewhere on a scale from 1 to 5. Each question has a drop down menu where you choose your rating.
-      ![image](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/ca72f6c5-23ba-4afe-98af-2384871cd42d)
+      + ![image](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/ca72f6c5-23ba-4afe-98af-2384871cd42d)
 
     + Answer each question and when you are done click 'Submit'.
     + ![image](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/1d71f832-f488-4ab1-a1cb-37d381072a4d)
@@ -92,60 +92,73 @@ Discussion and Conclusions: Address project issues, limitations, and how your co
     + Type in whatever you want and click save.
     + ![Screenshot 2024-04-22 104022](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/0c3958c6-29e5-4965-80ea-06f4cf1ed23a)
 
-    + Once you hit 'Save', you entry will appear at the bottom. So, whenever you login you will be able to see all of your past entires.
-    ![image](https://github.com/mabraham2o24/463-Final-Project/assets/143213640/0782b40a-0050-4c1d-ab4b-fccc1ee6a099)
 --------------------------------------------------------------------------------------------------------------------------------------
 
-  + Option 3: Good News
+  + Option 3: Stories
     + Click on the option 3 for Good News.
-    + This will take you to a page labeled 'Good News" where you can pick a category and generate a random good news article.
-      ![image](https://github.com/mabraham2o24/463-Final-Project/assets/143213640/bcf78fdf-becc-45f8-803a-d688f4cb12fe)
+    + This will take you to a page labeled 'Stories To Bring Awareness" where you can pick a category and generate a random news article.
+      ![image](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/7b07618d-6875-4f3e-bd85-870a77440c56)
+
     + Choose an article type by clicking on the drop down menu and choosing one of the categories.
-      ![image](https://github.com/mabraham2o24/463-Final-Project/assets/143213640/b4f983b9-b40f-4196-bcfe-f770169fb1f2)
+      ![image](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/8b05f0df-5329-4fc6-b0e5-a344d5b86432)
+
     + Once you choose a category, click Generate Article.
-    +  ![image](https://github.com/mabraham2o24/463-Final-Project/assets/143213640/f23764b0-384a-4928-b4f0-35c2e8658659)
+    +  ![image](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/5d974af7-f196-4d48-ba75-c88a581117b1)
+
 
     + This will generate a random article that you can read. Once an article is generated, you will be provided with the article title, source, and a read more option. Click the 'read more' option to go to the article.
-      ![image](https://github.com/mabraham2o24/463-Final-Project/assets/143213640/07a751f5-a540-42d2-83eb-78a62d51ea02)
-    + This will open up the article in a new tab of the web browser you are in and you can read the article. 
+      ![image](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/a3a49fda-8648-43c4-89d3-e99e3eb1c3bd)
+
+    + This will open up the article in a new tab of the web browser you are in and you can read the article.
+------------------------------------------------------
+  + Option 4: Resources
+    + Click on the option 4 called Resources. When you go this page you will see four different tables contained 3 resources for different categories such as support groups and online resources.
+      ![image](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/223e1ff2-4f0e-49b0-b0f1-0d5c61efcbad)
+------------------------------------------------------
+  + Option 5: Statistics
+    + Click on option 5 called Statistics and you will be taken to a page that lists out different stats that shows how bad the drug epidemic is. It has tables listing out numbers, percentages, etc along with some diagrams for visualizing these statistics for different substances. 
+     ![image](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/a90c0f9b-1f0a-4863-b4ca-78506de9b37c)
+
+
 
 -----------------------------------------------------------------------------------------------------------
 # ***Structure of the Code***
 This diagram is for our app2.py:
-+ ![image](https://github.com/mabraham2o24/463-Final-Project/assets/143213640/cc92d98d-aa93-4a30-a2d0-0d6faa258581)
++ ![image](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/a8f5c01f-1e5f-4fa3-a203-fea84e9dbb96)
+
 
 This diagram is for our migrate_passwords.py:
-+ ![image](https://github.com/mabraham2o24/463-Final-Project/assets/143213640/89db9746-68ce-4275-8c3e-6f198d623ff7)
++ ![image](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/4bde0f31-1dbb-4b03-861e-2242ded54e04)
+
 
 -------------------------------------------------------------------------------------------------------------------------
 
 # ***Functionalities and Test Results***
 + Function 1 - Create an Account
-+ ![image](https://github.com/mabraham2o24/463-Final-Project/assets/143213640/ca90db2b-692d-4170-b144-1077d09548ef)
-+ ![image](https://github.com/mabraham2o24/463-Final-Project/assets/143213640/3f4cebb6-ab33-412b-a017-206648b56bd2)
++ ![Screenshot 2024-04-22 103055](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/eea213de-6035-435f-b2b0-db8cb493f353)
++ ![Screenshot 2024-04-22 103235](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/af6dc321-a04e-43fb-95ca-7ac5e93d9a3e)
+
 
 + Function 2 - Choosing a menu option
-+ ![image](https://github.com/mabraham2o24/463-Final-Project/assets/143213640/404cb9fc-372b-49a4-b35a-ed62e6fc0125)
++ ![Screenshot 2024-04-22 103350](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/ba89512a-4b45-4656-b83e-427a93b7bb6d)
 
-+ Function 3 - Fill Out a Questionare and Get Back Mood Results and Advice
-+ ![image](https://github.com/mabraham2o24/463-Final-Project/assets/143213640/451510af-1975-4b7e-97ac-85a7868c0743)
-+ ![image](https://github.com/mabraham2o24/463-Final-Project/assets/143213640/43657ddd-d3f6-415e-9c35-1d8097ed6695)
 
-+ Function 4 - Can journal using our option 2 in the menu and can save your writings to visit back later.
-+ ![image](https://github.com/mabraham2o24/463-Final-Project/assets/143213640/32c603c1-e036-48ac-b76a-b89602df5c2b)
-+ ![image](https://github.com/mabraham2o24/463-Final-Project/assets/143213640/ae1cdc93-c3b7-4f99-a5bd-7edec9f08b2d)
++ Function 3 - Fill Out a Survey and Get Back the Results
++ ![Screenshot 2024-04-22 103508](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/f625a989-a6ce-4d6e-9121-9590f5b8c50e)
++ ![Screenshot 2024-04-22 103612](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/33205a3b-994f-4e09-b199-b554d7852574)
 
-+ Function 5 - Generate Good News article choosing one of the catagories provided. Once you choose a category, hit generate article and then click read more which will open up a new tab with the article of your choosing.
-+ ![image](https://github.com/mabraham2o24/463-Final-Project/assets/143213640/16b0905d-a5a9-42d3-814d-fe1f1e2be7e6)
-+ ![image](https://github.com/mabraham2o24/463-Final-Project/assets/143213640/edfe44aa-386a-41d6-bc32-1b53062fd4be)
-+ ![image](https://github.com/mabraham2o24/463-Final-Project/assets/143213640/d0d13638-5e11-4fff-9eee-3378f0aa9155)
 
-## If you want to see a video demo of the application in use(test results) click play below: 
-https://github.com/mabraham2o24/463-Final-Project/assets/143213640/1da470a1-08df-4ede-ab38-1558cede60a5
++ Function 4 - Can journal using our option 2 in the menu and write down your thoughts.
++ ![Screenshot 2024-04-22 103707](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/2bf9f567-bd3c-4914-ace8-bcdf91c04508)
+
+
++ Function 5 - Generate News article choosing one of the catagories provided. Once you choose a category, hit generate article and then click read more which will open up a new tab with the article of your choosing.
++ ![Screenshot 2024-04-22 112609](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/a90d1bf5-f5cd-49ef-9071-08e9f2ab8f8b)
++ ![Screenshot 2024-04-22 112625](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/fe94a37a-e7a8-4ac0-ac9b-39b896019f04)
++ ![image](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/e9343e77-49b8-4100-a3f6-322d4db112fd)
+
 
 # ***Discussion and Conclusions***
-+ Our main project issue was coming together and combining all of our code. For the sake of time and not being to meet all the time we split up this project into parts. Treasure handled the journaling and saving all the information to the database for each user. While I, Mahima, dealt with the login system and good new generator. So, after we finished our individual parts when it came time to combining the codes we had some trouble due to compatibility issues and code errors. We had to spend a bit time on that to get it working together. We both worked together on the Stressometer which did not cause many issues.
-+ Our biggest and really only limitation was time. We both had a lot of other work to do for other classes and was busy with personal stuff. Due to that we were not able to spend a lot of time on this project over break like we wanted to. If we had more time we would have added more features to improve our user interface and overall application. We wanted to add more menu options like a sleep tracker. We also wanted to make the good news generator use an API and randomly generate articles rather than hard coding them. Due to our time limit we were not able to implement some of the features we had in mind, but was able to execute the idea on a simple basis.
-+ Our goal for this project was to implement one of the algorithms we learned in class. The algorithm that we chose and fit best into our application was quick sort algorithm. We used this for our stressometer option. The user has to fill out a questionaire ranking their emotions and other factors. Once the user submits it, the quick sort algorithm sorts the scores which are used to give the user their results and advice.
-+ ![image](https://github.com/mabraham2o24/463-Final-Project/assets/143213640/87e7f1e0-ba51-4b05-87a2-33020ccd9efa)
-
++ Our main project issue was coming together and combining all of our code. Neither Mohamed or I had mucg time to meet up and work together. So for the sake of the project we split up the features being implemented and then came together at the end to put everything together. I did the first 3 options and he did the last two. Combining the code caused quite a few issues because our app2.py files were different so having to go in and fix all the errors was just a bit time consuming. Another issue I, Mahima, personally had was trying to save the journal entries. I wanted the user to be able to go back and visit their old posts but for some reason I was not able to get that to work. It was causing a lot of errors and crashing the website so we had to just scratch the idea of saving previous entries. Github codespaces was also causing some issues when it came to launching the website. 
++ Our biggest and really only limitation was time. We both had a lot of other work to do for other classes and was busy with personal stuff. Time was just very limited due to our schedules never meeting up and constantly having work for other classes. If we had more time we would have fixed the journaling issue and would have added more features such as an active page where the user can click on a link and it will directly lead them to a hotline. Or just any feature that can help with this topic. We feel like this web application has so much more potential but due to tome constraints we just cannot do anything about it. 
++ Our goal for this project was to build a user interface that is easy to access and navigate for any user. We also wanted this web application to have some features that can actually be useful for recovering addicts or for those who are looking to go on a recovery journey. In the beginning of the semester one of the first things we learning about was UI/UX and we wanted to use what we learned and develop a simple yet useful interface. 
