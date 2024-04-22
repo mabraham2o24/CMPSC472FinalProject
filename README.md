@@ -6,7 +6,9 @@ Discussion and Conclusions: Address project issues, limitations, and how your co
 + The goal of this project was to create a web application that users can use for five different features that is displayed on a menu after they login to their account. They can already have an exisiting account or can create a new one.:
   + Survey - Answer a questionaire about how often they drink, use subtances, how they are feeling, etc.
   + Journaling - They can use this option to journal about anything they want to just write down which they can access again by just signing into their account.
-  + Stories - There are four categories of articles - Recovery Stories, Impact of Addiction, and Statistics - that users can choose from. Once they choose a category, they can randomly generate an article for them to read. For the sake of this project we have 5 articles each. 
+  + Stories - There are four categories of articles - Recovery Stories, Impact of Addiction, and Statistics - that users can choose from. Once they choose a category, they can randomly generate an article for them to read. For the sake of this project we have 5 articles each.
+  +  Resources - This option contains different resources within Pennsylvania people can use to reach out for help.
+  +  Statistics - This options shows important statistics when it comes substance/drug usage.
 
 # ***Significance of the Project (10%)***
 + Drug addiction or any substance abuse of that matter is a serious issue that is taking over our country and other parts of the world. It is a serious topic that a lot of individuals have a hard time to talk about or to find resources that could help them with their recovery. We wanted to create a simple web application that has different types of resources that the user can use. They have a simple survey they can take that asks they about different questions about their addiction, mental state, etc. Once they answer it they can get back results which contains some simple advice and where they have been rated. Second, they have a journaling option. When recovering from addiction or just struggling with having to break it the individual might not have anybody to talk to. Or they can be afraid to reach out. Having a place where they can write down their thoughts on how they are feelings for the day and not having to show it to anyone can be an important step towards recovering. So we wanted to include this option so the user can use it to get out whatever they are feeling without having to talk to someone directly. The third option is called Stories. It has three different categories like mentioned in the introduction. We wanted to include this option to bring awareness to the issue that is drug addiction. Sometimes people do not know how bad something is without reading or seeing something for themselves. Our fourth option is called Resources. We think it is vital to have resources that the user can use to reach out for help. Sometimes a person might get overwhelmed with having to find resources to reach out for help. So we thought it was vital to include that so we can give someone the push to reach out for help. For the sake of this project we just included resources within Pennsylvania. Last but not least we included statisitcs so we can really put into perspective how bad this epidemic is. 
@@ -16,14 +18,15 @@ Discussion and Conclusions: Address project issues, limitations, and how your co
 + Open up our repository on github.
   + link: https://github.com/mabraham2o24/CMPSC472FinalProject.git
 + Once you are in our repository, click the 'period' key on your keyboard which will open up github codespaces. It will look something like this:
-![image](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/540bc062-42e2-42fa-8ce5-a6035ca76656)
-
+![image](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/d8352f1e-e91c-4352-b941-42053c9ea8e8)
 
 + Once codespace is opened, click on the 3 lines at the top left corner above the little file sign. It looks like this:
-![image](https://github.com/mabraham2o24/463-Final-Project/assets/143213640/ebb939c0-3db8-41df-aa0e-248e10bd2473)
++ ![Screenshot 2024-04-22 102456](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/3f2abe03-70db-40bf-8dc3-2aa72b9b6994)
+
 
 + You will see an option called 'Terminal'. Hover over it and you will see an option called 'New Terminal'. Click on that to open a new terminal.
 ![image](https://github.com/mabraham2o24/463-Final-Project/assets/143213640/d43df8bd-96ae-4d35-9bf2-f089d65e973b)
+
 
 + Once you click on 'New Terminal', a terminal will pop up and you will be prompted to choose where you want to continue working, Github Codespaces or a New Local Clone. Choose Github Codespaces.
 ![image](https://github.com/mabraham2o24/463-Final-Project/assets/143213640/db292e30-d3b3-4b47-8331-94a9e9118503)
@@ -33,16 +36,20 @@ Discussion and Conclusions: Address project issues, limitations, and how your co
   
 + Once you choose either 2 Cores or 4 Cores, a new tab will open up and this will be your codespace.
 + Once the codespace loads, the terminal you are going to run the application is will open up.
-![image](https://github.com/mabraham2o24/463-Final-Project/assets/143213640/5dcf03cf-9780-424a-92c1-84ab87090960)
+![image](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/32c13a3f-f41b-4fe7-8521-8107e63a8163)
+
 
 + Now that you have a terminal open, run the command 'pip install flask'. We need this to run our website.
-![image](https://github.com/mabraham2o24/463-Final-Project/assets/143213640/486fbad4-c850-42b4-bbc8-71600b905df3)
+![image](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/92b6e262-b10f-4964-a751-bdf7e1c18b4e)
+
 
 + Once flask has been installed, the command line prompt will pop up again where you are going to run the command to launch the application.
-+ ![image](https://github.com/mabraham2o24/463-Final-Project/assets/143213640/22fb7b7b-874e-446d-b9fa-9a7fd3c681f4).
++ ![image](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/655615ff-e121-483c-ab8b-753cad2cb934)
+
 
 + Now you will run the command 'python app2.py'which will run our application.
-![image](https://github.com/mabraham2o24/463-Final-Project/assets/143213640/45a705db-59e6-4966-a308-9e2931200607)
+![image](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/e614ff4b-e561-4093-9324-a84e94208531)
+
 ----------------------------------------------------------------------------------------------------------------------------------
 ## Instruction to Use
 + There are two ways to open up the website:
@@ -54,27 +61,34 @@ Discussion and Conclusions: Address project issues, limitations, and how your co
     + Once you run the command, a little window will pop up in the bottom right corner that says 'Open Web Browser'. Click on that and that will launch the website on a new tab of your web browser.
       ![image](https://github.com/mabraham2o24/463-Final-Project/assets/143213640/955f38d2-7a1f-4fd0-9b92-04296514d2b1)
 + Once you have launched the website, you will see a login page. If you already have an account, login with your username and password. If this is your first time using the website, click on 'Don't have an account, Register here.'
-+ ![image](https://github.com/mabraham2o24/463-Final-Project/assets/143213640/5bd1c389-034e-4370-b904-be8292682b9c)
++ ![Screenshot 2024-04-22 103055](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/97bb122a-b370-4c6f-87d1-a75f3a6aad7a)
+
 + You will then go to a 'Register' screen. Choose a username and password and hit 'Register'.
-![image](https://github.com/mabraham2o24/463-Final-Project/assets/143213640/6faa5906-8785-4b5d-a376-2fe17b17bc68).
+![image](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/e00e436d-6efe-463c-b945-c3632f14956e)
+
 + Once you have created an account, you will see a little message that says "Account Created For..." and will end up back on the login page.
-+ ![image](https://github.com/mabraham2o24/463-Final-Project/assets/143213640/7166798b-951e-45f8-8038-220396ded73e)
++ ![image](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/00c15b30-9012-49b0-b251-4450498d6dea)
+
 + Log into your new account and you will see a menu.
-+ ![image](https://github.com/mabraham2o24/463-Final-Project/assets/143213640/8df16d07-76dd-4486-ad0d-ebb55850835b)
++ ![image](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/488b8f43-340f-4bb4-b5cd-fbdb883634ec)
+
 + You can choose any three options. The instructions for each menu option is as follows:
-  + Option 1: Stressometer
-    + Click the first option called 'Stressometer'. Once you open up this option, you will be prompted to fill out a questionaire.
-    + There are 9 questions and you rate your answer from a scale 1 to 5. For instance, the first question asks about how emotionally balanced you feel right now. Your answer will be somewhere on a scale from 1 to 5. Each question has a drop down menu where you choose your rating.
-      ![image](https://github.com/mabraham2o24/463-Final-Project/assets/143213640/ccfe0c5b-7263-43b3-a202-38211f0150a3)
+  + Option 1: Survey
+    + Click the first option called 'Survey'. Once you open up this option, you will be prompted to fill out a questionaire.
+    + There are 9 questions and you rate your answer from a scale 1 to 5. For instance, the first question asks about how often do you consume alcohol or drugs. Your answer will be somewhere on a scale from 1 to 5. Each question has a drop down menu where you choose your rating.
+      ![image](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/ca72f6c5-23ba-4afe-98af-2384871cd42d)
+
     + Answer each question and when you are done click 'Submit'.
-    + ![image](https://github.com/mabraham2o24/463-Final-Project/assets/143213640/c600e8a5-0c02-4682-86b3-e0f1e3cb8e96)
+    + ![image](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/1d71f832-f488-4ab1-a1cb-37d381072a4d)
+
     + Once you hit submit, you will get your results based on your ratings. You will also get some advice based on whatever your results is.
-      ![image](https://github.com/mabraham2o24/463-Final-Project/assets/143213640/c5cb89fc-6cf6-469a-84d4-443f048e46be)
+      ![image](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/0189f78f-8ce1-429d-90d3-045bbd808ab3)
+
     ---------------------------------------------------------------------------------------------------------------------------------------
       
   + Option 2: Journaling
     + Click on the option 2 for journaling. This is where you can write down thoughts or whatever you want.
-    ![image](https://github.com/mabraham2o24/463-Final-Project/assets/143213640/2cef2cbe-87d4-44a5-a20d-2308447b2f11)
+    ![image](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/e852e71f-a60f-48e0-ba44-5a6998d89dcb)
     + Type in whatever you want and click save.
     + ![image](https://github.com/mabraham2o24/463-Final-Project/assets/143213640/5a23f310-d087-4f20-b56f-cfdcc16591e6)
     + Once you hit 'Save', you entry will appear at the bottom. So, whenever you login you will be able to see all of your past entires.
