@@ -176,6 +176,7 @@ def survey():
 
 
 # Function to get past journal entries for a user
+# Function to get past journal entries for a user
 def get_past_entries(username):
     conn = sqlite3.connect('users.db')
     c = conn.cursor()
@@ -183,6 +184,7 @@ def get_past_entries(username):
     entries = c.fetchall()
     conn.close()
     return entries
+
 @app.route('/journaling', methods=['GET', 'POST'])
 def journaling():
     if request.method == 'POST':
@@ -197,7 +199,7 @@ def journaling():
         conn.close()
 
         # Redirect to the same page after saving the entry
-        return redirect(url_for('journaling'))
+        return redirect(url_for('journaling', username=username))
 
     # Get past journal entries for the current user
     username = request.args.get('username')
