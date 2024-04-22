@@ -90,7 +90,8 @@ Discussion and Conclusions: Address project issues, limitations, and how your co
     + Click on the option 2 for journaling. This is where you can write down thoughts or whatever you want.
     ![image](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/e852e71f-a60f-48e0-ba44-5a6998d89dcb)
     + Type in whatever you want and click save.
-    + ![image](https://github.com/mabraham2o24/463-Final-Project/assets/143213640/5a23f310-d087-4f20-b56f-cfdcc16591e6)
+    + ![Screenshot 2024-04-22 104022](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/0c3958c6-29e5-4965-80ea-06f4cf1ed23a)
+
     + Once you hit 'Save', you entry will appear at the bottom. So, whenever you login you will be able to see all of your past entires.
     ![image](https://github.com/mabraham2o24/463-Final-Project/assets/143213640/0782b40a-0050-4c1d-ab4b-fccc1ee6a099)
 --------------------------------------------------------------------------------------------------------------------------------------
