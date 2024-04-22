@@ -176,7 +176,7 @@ def survey():
 
 
 # Function to get past journal entries for a user
-=def get_past_entries(username):
+def get_past_entries(username):
     conn = sqlite3.connect('users.db')
     c = conn.cursor()
     c.execute('SELECT content, timestamp FROM journal_entries WHERE username=? ORDER BY timestamp DESC', (username,))
