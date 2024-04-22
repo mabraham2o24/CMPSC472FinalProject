@@ -188,16 +188,22 @@ def journaling():
     if request.method == 'POST':
         journal_content = request.form.get('journal_content')
         username = request.form.get('username')
-        # Here you can save the journal entry to your database or perform any other actions
-        
-        # For demonstration purposes, let's print the journal content and username
-        print(f"Journal Content: {journal_content}")
-        print(f"Username: {username}")
-        
+
+        # Save the journal entry to the database
+        conn = sqlite3.connect('users.db')
+        c = conn.cursor()
+        c.execute('INSERT INTO journal_entries (username, content) VALUES (?, ?)', (username, journal_content))
+        conn.commit()
+        conn.close()
+
         # Redirect to the same page after saving the entry
         return redirect(url_for('journaling'))
 
-    return render_template('journaling.html')
+    # Get past journal entries for the current user
+    username = request.args.get('username')
+    entries = get_past_entries(username)
+
+    return render_template('journaling.html', username=username, entries=entries)
 
 
 @app.route('/good-news', methods=['GET', 'POST'])
