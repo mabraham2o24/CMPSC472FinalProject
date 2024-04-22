@@ -174,9 +174,10 @@ def survey():
 
     return render_template('survey.html')
 
-
 @app.route('/journaling', methods=['GET', 'POST'])
 def journaling():
+    username = ''  # Default value for username
+    
     if request.method == 'POST':
         # Get the journal content and username from the form
         journal_content = request.form['journal_content']
@@ -200,6 +201,7 @@ def journaling():
 
     # Pass the entries to the template for rendering
     return render_template('journaling.html', entries=entries, username=username)
+
 
 
 
