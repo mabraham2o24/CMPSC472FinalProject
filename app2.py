@@ -176,9 +176,22 @@ def survey():
 
 
 
-@app.route('/journaling')
+@app.route('/journaling', methods=['GET', 'POST'])
 def journaling():
+    if request.method == 'POST':
+        journal_content = request.form.get('journal_content')
+        username = request.form.get('username')
+        # Here you can save the journal entry to your database or perform any other actions
+        
+        # For demonstration purposes, let's print the journal content and username
+        print(f"Journal Content: {journal_content}")
+        print(f"Username: {username}")
+        
+        # Redirect to the same page after saving the entry
+        return redirect(url_for('journaling'))
+
     return render_template('journaling.html')
+
 
 @app.route('/good-news', methods=['GET', 'POST'])
 def good_news():
