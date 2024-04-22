@@ -174,33 +174,65 @@ def survey():
 
     return render_template('survey.html')
 
+# Import necessary modules
+from flask import Flask, render_template, request, redirect, url_for, flash
+import sqlite3
+import random
+
+app = Flask(__name__)
+app.secret_key = 'your_secret_key'  # Set your own secret key
+
+# Create a SQLite database
+conn = sqlite3.connect('users.db')
+c = conn.cursor()
+c.execute('''
+          CREATE TABLE IF NOT EXISTS users (
+              id INTEGER PRIMARY KEY AUTOINCREMENT,
+              username TEXT NOT NULL,
+              password TEXT NOT NULL
+          )
+          ''')
+c.execute('''
+          CREATE TABLE IF NOT EXISTS journal_entries (
+              id INTEGER PRIMARY KEY AUTOINCREMENT,
+              username TEXT NOT NULL,
+              content TEXT NOT NULL,
+              timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+          )
+          ''')
+conn.commit()
+conn.close()
+
+# Function to get past journal entries for a user
+def get_past_entries(username):
+    conn = sqlite3.connect('users.db')
+    c = conn.cursor()
+    c.execute('SELECT content, timestamp FROM journal_entries WHERE username=? ORDER BY timestamp DESC', (username,))
+    entries = c.fetchall()
+    conn.close()
+    return entries
+
 @app.route('/journaling', methods=['GET', 'POST'])
 def journaling():
-    username = ''  # Default value for username
-    
     if request.method == 'POST':
-        # Get the journal content and username from the form
-        journal_content = request.form['journal_content']
-        username = request.form['username']
+        journal_content = request.form.get('journal_content')
+        username = request.form.get('username')
 
-        # Save the journal entry to a database or file
-        # For demonstration purposes, I'll assume you have a database table named 'journal_entries'
-        # with columns 'username' and 'content'
+        # Save the journal entry to the database
         conn = sqlite3.connect('users.db')
         c = conn.cursor()
         c.execute('INSERT INTO journal_entries (username, content) VALUES (?, ?)', (username, journal_content))
         conn.commit()
         conn.close()
 
-    # Fetch all journal entries for the current user
-    conn = sqlite3.connect('users.db')
-    c = conn.cursor()
-    c.execute('SELECT username, content FROM journal_entries WHERE username=?', (username,))
-    entries = c.fetchall()
-    conn.close()
+        # Redirect to the same page after saving the entry
+        return redirect(url_for('journaling', username=username))
 
-    # Pass the entries to the template for rendering
-    return render_template('journaling.html', entries=entries, username=username)
+    # Get past journal entries for the current user
+    username = request.args.get('username')
+    entries = get_past_entries(username)
+
+    return render_template('journaling.html', username=username, entries=entries)
 
 
 
