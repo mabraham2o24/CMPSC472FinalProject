@@ -175,37 +175,34 @@ def survey():
     return render_template('survey.html')
 
 
-# Function to get past journal entries for a user
-# Function to get past journal entries for a user
-def get_past_entries(username):
-    conn = sqlite3.connect('users.db')
-    c = conn.cursor()
-    c.execute('SELECT content, timestamp FROM journal_entries WHERE username=? ORDER BY timestamp DESC', (username,))
-    entries = c.fetchall()
-    conn.close()
-    return entries
-
 @app.route('/journaling', methods=['GET', 'POST'])
 def journaling():
     if request.method == 'POST':
-        journal_content = request.form.get('journal_content')
-        username = request.form.get('username')
+        # Get the journal content and username from the form
+        journal_content = request.form['journal_content']
+        username = request.form['username']
 
-        # Save the journal entry to the database
+        # Save the journal entry to a database or file
+        # For demonstration purposes, I'll assume you have a database table named 'journal_entries'
+        # with columns 'username' and 'content'
         conn = sqlite3.connect('users.db')
         c = conn.cursor()
         c.execute('INSERT INTO journal_entries (username, content) VALUES (?, ?)', (username, journal_content))
         conn.commit()
         conn.close()
 
-        # Redirect to the same page after saving the entry
-        return redirect(url_for('journaling', username=username))
+    # Fetch all journal entries for the current user
+    conn = sqlite3.connect('users.db')
+    c = conn.cursor()
+    c.execute('SELECT username, content FROM journal_entries WHERE username=?', (username,))
+    entries = c.fetchall()
+    conn.close()
 
-    # Get past journal entries for the current user
-    username = request.args.get('username')
-    entries = get_past_entries(username)
+    # Pass the entries to the template for rendering
+    return render_template('journaling.html', entries=entries, username=username)
 
-    return render_template('journaling.html', username=username, entries=entries)
+
+
 
 
 @app.route('/good-news', methods=['GET', 'POST'])
