@@ -158,7 +158,8 @@ This diagram is for our migrate_passwords.py:
 + ![Screenshot 2024-04-22 112625](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/fe94a37a-e7a8-4ac0-ac9b-39b896019f04)
 + ![image](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/e9343e77-49b8-4100-a3f6-322d4db112fd)
 # ***Demo***
-+ The video of a brief demo is uploaded onto this repository and can be found on the homepage. 
++ The video of a brief demo is uploaded onto this repository and can be found on the homepage. Click on the file then click "View Raw" which will download the video to your computer. Once it is downloaded you can watch it. 
+![image](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/acf507e9-54fd-4007-b1a8-d6c539a8754c)
 
 ----------------------------------------------------------
 
