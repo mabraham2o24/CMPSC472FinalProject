@@ -157,9 +157,26 @@ This diagram is for our migrate_passwords.py:
 + ![Screenshot 2024-04-22 112609](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/a90d1bf5-f5cd-49ef-9071-08e9f2ab8f8b)
 + ![Screenshot 2024-04-22 112625](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/fe94a37a-e7a8-4ac0-ac9b-39b896019f04)
 + ![image](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/e9343e77-49b8-4100-a3f6-322d4db112fd)
+# ***Demo***
++ The video of a brief demo is uploaded onto this repository and can be found on the homepage. 
+
+----------------------------------------------------------
+
+# ***What we Included from the Lectures***
++ Database Interactions:
+  + Every time we interact with our SQLite database, whether creating it, inserting data, or querying it, system calls are invoked to access the file system and manage data on the disk.
++ Processing User Input:
+  + When a user submits their survey, Flask handles the incoming network data (a system call), processes it, and stores the results, which again invokes system calls for writing to the database.
++ Rendering and Sending Responses:
+  + Rendering HTML templates and sending them back to the user involves system calls that read template files and send the resultant HTML over the network back to the user's browser.
++ Logging In and Session Management:
+  + As users log in, their credentials are verified against the database, requiring file system access, and sessions are managed, necessitating memory management—both are system call dependent.
+
++ Survey Results:
+  + When you fetch survey results from a data structure in your web application, system calls are at work behind the scenes. As your program retrieves the data from memory to calculate scores, system calls for memory access are implicitly issued by the operating system. Finally, system calls also handle sending the calculated results back to the user through the network, completing the process from data retrieval to response delivery.
 
 
 # ***Discussion and Conclusions***
 + Our main project issue was coming together and combining all of our code. Neither Mohamed or I had mucg time to meet up and work together. So for the sake of the project we split up the features being implemented and then came together at the end to put everything together. I did the first 3 options and he did the last two. Combining the code caused quite a few issues because our app2.py files were different so having to go in and fix all the errors was just a bit time consuming. Another issue I, Mahima, personally had was trying to save the journal entries. I wanted the user to be able to go back and visit their old posts but for some reason I was not able to get that to work. It was causing a lot of errors and crashing the website so we had to just scratch the idea of saving previous entries. Github codespaces was also causing some issues when it came to launching the website. 
 + Our biggest and really only limitation was time. We both had a lot of other work to do for other classes and was busy with personal stuff. Time was just very limited due to our schedules never meeting up and constantly having work for other classes. If we had more time we would have fixed the journaling issue and would have added more features such as an active page where the user can click on a link and it will directly lead them to a hotline. Or just any feature that can help with this topic. We feel like this web application has so much more potential but due to tome constraints we just cannot do anything about it. 
-+ Our goal for this project was to build a user interface that is easy to access and navigate for any user. We also wanted this web application to have some features that can actually be useful for recovering addicts or for those who are looking to go on a recovery journey. In the beginning of the semester one of the first things we learning about was UI/UX and we wanted to use what we learned and develop a simple yet useful interface. 
++ Our goal for this project was to build a user interface that is easy to access and navigate for any user. We also wanted this web application to have some features that can actually be useful for recovering addicts or for those who are looking to go on a recovery journey. In the beginning of the semester one of the first things we learning about was UI/UX and we wanted to use what we learned and develop a simple yet useful interface.
