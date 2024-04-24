@@ -70,7 +70,8 @@ Discussion and Conclusions: Address project issues, limitations, and how your co
 + ![image](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/00c15b30-9012-49b0-b251-4450498d6dea)
 
 + Log into your new account and you will see a menu.
-+ ![image](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/488b8f43-340f-4bb4-b5cd-fbdb883634ec)
++ ![image](https://github.com/mabraham2o24/CMPSC472FinalProject/assets/143213640/450acd57-e223-4195-b844-ca2d8ab8865f)
+
 
 + You can choose any three options. The instructions for each menu option is as follows:
   + Option 1: Survey
